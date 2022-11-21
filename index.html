@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal website project</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/43889a307f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="container"></div>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+        </ul>
+    </nav>
+    <div class="header-text">
+        <p>WEB DEVELOPER</p>
+        <h1> My website- <span><i></i>KELVIN<i></span><br>From Nairobi Kenya</h1>
+    </div>
+    <!----------about-------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="https://learn.corel.com/wp-content/uploads/2022/02/hardest-1985097_1280-1024x683.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About kelvin</h1>
+                    <p>I am an Upcoming Full Stack Software Engineer focused on both back end and front end developent.I have a degree in Mathematics and Physics and want to better my discovering skills through learning how to code and program<br>A problem once coded then it once solved</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Expertise')">Expertise</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        
+                    </div>
+                    <div class="tab-contents active-tab " id="Expertise">
+                        <ul>
+                            <li><span>software developer</span><br>Designing web/Apps interface</li>
+                            <li><span>Web deleopment</span><br>Designing websites</li>
+                            <li><span>App designer</span><br>Designing android and iOS app</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>SBKL</span><br>DAD Operator</li>
+                            <li><span>Sama Source</span><br>Data Entry Clerk</li>
+                            <li><span>Mumbuni Girls</span><br>Mathematics and Physics</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2022</span><br>full stack software engineering moringa school</li>
+                            <li><span>2021</span><br>programing karatina</li>
+                            <li><span>2017</span><br>image annotation sama source</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--------------services----------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">What I Do</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <h2>web Design</h2>
+                <p>Experience the best world design for satisfying moments through tech</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-sharp fa-solid fa-crop"></i>
+                <h2>Codes Zoo</h2>
+                <p>engineeringn mambo mbaya</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>Android App</h2>
+                <p>Front end experince for androids</p>
+                <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------------portfolio----------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>  
+        <div class="work-list">
+            <div class="work">
+               <img src="https://wallpaperaccess.com/full/1779916.jpg"> 
+               <div class="layer">
+                <h3>life Hacks App</h3>
+                <p>This is my favorite application software</p>
+                <a href="#"><i class="fa-sharp fa-solid fa-link"></i></a>
+               <a href="#" class="btn">See more</a> 
+                </div>
+            </div>    
+    </div> 
+
+    <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("active-tab");
+
+        function opentab(tabname) {
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+</body>
+
+</html>
